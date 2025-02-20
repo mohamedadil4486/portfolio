@@ -1,0 +1,111 @@
+/* Portfolio section styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'poppins',sana-serif;
+}
+.portfolio {
+    background-color: #2f353d;
+    padding: 50px 0;
+    text-align: center;
+    margin-top:100px ;
+    
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #7cf03d;
+    margin-bottom: 30px;
+}
+body{
+    background: linear-gradient(145deg, #1f242d, #2a2e38);
+
+}
+
+/* Container for the projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Project items styling */
+.project-item {
+    background:#7cf03d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.6s ease;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.project-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Slide from left to right */
+.left-to-right {
+    animation: slideLeftToRight 1s ease-out forwards;
+}
+
+/* Slide from right to left */
+.right-to-left {
+    animation: slideRightToLeft 1s ease-out forwards;
+}
+
+/* Keyframe animation for left to right */
+@keyframes slideLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Keyframe animation for right to left */
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.back-to-home {
+    position: fixed; /* Correct positioning */
+    top: 90%; /* Position it from the top of the page */
+    right: 20px; /* Position it from the right of the page */
+    padding: 5px 15px; /* Smaller padding for a compact look */
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 5px; /* Rounded corners for the box shape */
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 14px; /* Smaller text */
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer; /* Adds a pointer on hover */
+    z-index: 10;
+}
+
+.back-to-home:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}

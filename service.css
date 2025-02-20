@@ -1,0 +1,228 @@
+/* Default Styles for Larger Screens (Laptop/PC) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'poppins',sana-serif;
+}
+.services {
+    background-color: #1f242d;
+    color: #ffffff;
+    padding: 60px 9%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-info h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #7cf03d; /* Highlight color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d1d1d1; /* Subtle light gray */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #2c323b;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #7cf03d;
+    margin-bottom: 20px;
+}
+
+.service-item h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #d1d1d1;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.btn-sci {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    color: #1f242d;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+/* Mobile Devices (Small screens) */
+@media (max-width: 600px) {
+    .services-info h1 {
+        font-size: 36px;
+    }
+
+    .services-info p {
+        font-size: 16px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .service-item i {
+        font-size: 30px;
+    }
+
+    .service-item h2 {
+        font-size: 18px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+/* Tablets (Medium screens) */
+@media (max-width: 768px) {
+    .services-info h1 {
+        font-size: 40px;
+    }
+
+    .services-info p {
+        font-size: 17px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-item {
+        width: 45%;
+        padding: 25px;
+    }
+
+    .service-item i {
+        font-size: 35px;
+    }
+
+    .service-item h2 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 8px 25px;
+    }
+}
+
+/* Laptop/Desktop (Large screens) */
+@media (max-width: 1024px) {
+    .services-info h1 {
+        font-size: 45px;
+    }
+
+    .services-info p {
+        font-size: 18px;
+    }
+
+    .services-list {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .service-item {
+        width: 22%;
+        padding: 30px;
+    }
+
+    .service-item i {
+        font-size: 40px;
+    }
+
+    .service-item h2 {
+        font-size: 22px;
+    }
+
+    .service-item p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}
+.back-to-home {
+    position: fixed; /* Correct positioning */
+    top: 90%; /* Position it from the top of the page */
+    right: 20px; /* Position it from the right of the page */
+    padding: 5px 15px; /* Smaller padding for a compact look */
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 5px; /* Rounded corners for the box shape */
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 14px; /* Smaller text */
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer; /* Adds a pointer on hover */
+    z-index: 10;
+}
+
+.back-to-home:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
